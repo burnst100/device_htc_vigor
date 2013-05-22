@@ -1,4 +1,4 @@
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/liquid/config/common_phone.mk)
 # $(call inherit-product, vendor/cm/config/cdma.mk)
 
 # Bootanimation
@@ -6,7 +6,7 @@ TARGET_BOOTANIMATION_NAME := vertical-720x1280
 $(call inherit-product, device/htc/vigor/vigor.mk)
 
 # Device naming
-PRODUCT_NAME := cm_vigor
+PRODUCT_NAME := liquid_vigor
 PRODUCT_DEVICE := vigor
 PRODUCT_MODEL := ADR6425LVW
 PRODUCT_MANUFACTURER := HTC
@@ -15,7 +15,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_vigor BUILD_ID=IML74K BUILD_FIN
 
 # Release name
 PRODUCT_RELEASE_NAME := Vigor
--include vendor/cm/config/common_versions.mk
+-include vendor/liquid/config/common_versions.mk
 
 ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
